@@ -1,0 +1,21 @@
+{
+    "name": "test/renovate-20210629",
+    "type": "project",
+    "license": "MIT",
+    "description": "Test Renovate 20210629",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org",
+            "only": ["wpackagist-plugin/*", "wpackagist-theme/*"]
+        },
+        {
+            "type": "composer",
+            "url": "https://<GITLAB_URL>/api/v4/group/<GROUP_ID>/-/packages/composer/packages.json"
+        }
+
+    ],
+    "require": {
+        "<PACKAGE FROM CUSTOM COMPOSER REPOSITORY>":"^3.0"
+    }
+}
